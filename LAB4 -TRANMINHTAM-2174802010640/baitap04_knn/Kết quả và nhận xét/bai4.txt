@@ -1,0 +1,8 @@
+So sanh KNN bo phieu thuong va bo phieu co trong so
+k=  1, weights=uniform , accuracy=0.8000
+k=  1, weights=distance, accuracy=0.8000
+k= 13, weights=uniform , accuracy=0.9200
+k= 13, weights=distance, accuracy=0.9333
+k=101, weights=uniform , accuracy=0.8533
+k=101, weights=distance, accuracy=0.9067
+Nhan xet: Trong so distance tang anh huong cua cac diem gan mau moi, nhung voi k rat lon van co the lam mo hinh qua don gian.

@@ -1,0 +1,8 @@
+Ở bài này, em dùng KNeighborsRegressor để dự đoán giá nhà dựa trên diện tích. Em thử các giá trị k từ 1 đến 20 và dùng kiểm định chéo 5 phần trên tập học để chọn k phù hợp nhất. Khi sử dụng neg_mean_absolute_error, điểm trả về mang
+ dấu âm nên giá trị càng lớn thì MAE thực tế càng nhỏ.
+
+Theo kết quả chạy, k tốt nhất là 2 và MAE trên tập kiểm tra là 0.4867 tỷ đồng. Trong khi đó, mô hình đường thẳng có MAE là
+ 0.2578 tỷ đồng, thấp hơn KNN. Như vậy, trong bài này KNN chưa dự đoán tốt bằng mô hình đường thẳng.
+
+Em nghĩ nguyên nhân là giá nhà trong bộ dữ liệu có xu hướng tăng gần theo đường thẳng khi diện tích tăng. Mô hình đường thẳng
+ phù hợp với dạng dữ liệu này hơn, còn KNN chỉ dựa vào giá của những căn nhà gần nhất đã có trong tập học.

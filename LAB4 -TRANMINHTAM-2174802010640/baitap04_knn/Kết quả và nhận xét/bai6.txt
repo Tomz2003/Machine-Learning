@@ -1,0 +1,9 @@
+Ở bài này, em tạo dữ liệu ngẫu nhiên với 1.000, 10.000 và 100.000 mẫu, mỗi mẫu có hai đặc trưng. Sau đó, em đo thời gian chạy fit
+ và predict cho từng kích thước dữ liệu.
+
+Kết quả thời gian có thể khác nhau tùy cấu hình máy. Tuy nhiên, khi số lượng mẫu tăng, thời gian dự đoán thường cũng tăng vì 
+chương trình phải tính khoảng cách từ mẫu mới đến các mẫu đã lưu để tìm láng giềng gần nhất.
+
+Qua bài này, em hiểu vì sao KNN được gọi là mô hình học lười. Lúc huấn luyện, mô hình chủ yếu lưu dữ liệu chứ chưa thực hiện
+ nhiều phép tính để tạo ra mô hình dự đoán. Khi cần dự đoán, nó mới bắt đầu tìm các láng giềng và tính kết quả. Vì vậy, 
+ KNN thường huấn luyện nhanh nhưng có thể mất nhiều thời gian dự đoán khi dữ liệu lớn.

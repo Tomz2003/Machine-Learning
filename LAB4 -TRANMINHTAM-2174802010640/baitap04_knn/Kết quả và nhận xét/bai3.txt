@@ -1,0 +1,14 @@
+Ở bài này, em đổi cột chi_tieu từ nghìn đồng sang triệu đồng bằng cách chia giá trị cho 1000, sau đó chạy lại KNN với k = 7 và 
+không chuẩn hóa dữ liệu.
+
+Kết quả ban đầu khi chưa đổi đơn vị có accuracy là 0.5333, tức khoảng 53,33%. Khi đổi đơn vị, kết quả có thể thay đổi nhiều vì
+ KNN dựa vào khoảng cách giữa các mẫu để tìm những người gần giống nhau nhất. Trong khi đó, giá trị của cột chi tiêu ban đầu lớn
+  hơn nhiều so với số giờ ôn và điểm giữa kỳ, nên cột này có thể ảnh hưởng gần như toàn bộ đến khoảng cách.
+
+Sau khi chia cho 1000, giá trị chi tiêu nhỏ đi, nên mức ảnh hưởng của cột này cũng giảm xuống. Lúc đó, hai cột giờ ôn và điểm
+ giữa kỳ có ảnh hưởng rõ hơn đến việc tìm láng giềng. Vì vậy, dù dữ liệu thực tế không thay đổi, kết quả dự đoán vẫn có thể khác 
+ do cách tính khoảng cách đã thay đổi.
+
+Theo em, đây là điểm cần chú ý khi sử dụng KNN. Nếu các cột có đơn vị khác nhau mà không chuẩn hóa thì cột có giá trị lớn dễ làm 
+ảnh hưởng đến kết quả. Nếu chuẩn hóa bằng StandardScaler đúng cách, việc đổi từ nghìn đồng sang triệu đồng sẽ không làm thay đổi 
+đáng kể dữ liệu sau chuẩn hóa, nên kết quả KNN về cơ bản vẫn giữ nguyên.

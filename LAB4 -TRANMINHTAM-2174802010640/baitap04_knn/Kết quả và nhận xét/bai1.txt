@@ -1,0 +1,12 @@
+BÀI 1: TỰ VIẾT KNN KHÔNG DÙNG THƯ VIỆN
+
+Ở bài này, em tự viết hàm KNN để dự đoán nhãn thay vì dùng trực tiếp KNeighborsClassifier. Đầu tiên, chương trình tính khoảng cách
+ từ mẫu mới đến tất cả các mẫu trong tập học bằng công thức Euclid. Sau đó dùng np.argsort để tìm ra 13 mẫu có khoảng cách nhỏ
+  nhất. Cuối cùng, chương trình lấy nhãn của 13 mẫu này và chọn lớp có nhiều phiếu nhất làm kết quả dự đoán.
+
+Khi chạy trên tập kiểm tra của bộ dữ liệu hai vầng trăng, accuracy đạt 0.9200, tức là 92%. Kết quả này giống với 
+KNeighborsClassifier ở mục 4 trong tài liệu. Điều đó cho thấy hàm em tự viết đã tính khoảng cách và chọn láng giềng đúng.
+
+Qua bài này, em hiểu rõ hơn cách KNN hoạt động. Thuật toán không tạo ra một công thức dự đoán riêng trong lúc huấn luyện, mà giữ
+ lại dữ liệu cũ để so sánh khi có mẫu mới. Nếu chọn sai các láng giềng gần nhất thì kết quả dự đoán cũng có thể sai. Vì vậy,
+  việc tính khoảng cách và chọn đúng k mẫu gần nhất là phần quan trọng nhất của bài.

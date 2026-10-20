@@ -1,0 +1,3 @@
+euclidean: k tot nhat = 13, CV = 0.8667, accuracy test = 0.9200
+manhattan: k tot nhat = 27, CV = 0.8667, accuracy test = 0.9067
+Nhan xet: Doi sang Manhattan khong lam accuracy thay doi nhieu tren tap kiem tra nay.
