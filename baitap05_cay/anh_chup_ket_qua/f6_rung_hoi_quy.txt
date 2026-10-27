@@ -1,0 +1,6 @@
+MAE tren tap kiem tra (ty dong):
+  Cay sau 3               : 0.5039
+  Duong thang             : 0.2578
+  Random Forest 200 cay   : 0.4559
+Du doan gia nha 250 m2 (ty dong): cay=9.40, duong thang=19.91, rung=9.20
+Nhan xet: Rừng cây quyết định không ngoại suy tốt ra ngoài khoảng diện tích đã học. Mỗi cây trả về giá trị trung bình ở lá mà căn nhà rơi vào, nên dự đoán của rừng là trung bình các dự đoán đó và thường nằm trong khoảng giá đã thấy ở tập học.

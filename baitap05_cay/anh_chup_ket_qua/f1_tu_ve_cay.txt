@@ -1,0 +1,3 @@
+cay_nam_la.png: do sau=3, so la=5, accuracy test=0.7467
+cay_sau_2.png: do sau=2, so la=4, accuracy test=0.7667
+Nhan xet: Cay sau 2 chi co hai nhanh con o tang thu hai; neu hai la cung ket luan thi viec tach tiep khong doi nhan du doan, nhung co the tach de lam cac nhanh thuần hon theo Gini/entropy.

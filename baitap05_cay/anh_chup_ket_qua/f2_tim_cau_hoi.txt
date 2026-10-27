@@ -1,0 +1,4 @@
+So khach tap hoc: 450
+Cau hoi tot nhat: thu_nhap <= 15.05
+Muc giam Gini: 0.122145
+Nhan xet: Cây thử các ngưỡng nằm giữa những giá trị liên tiếp của từng cột, tính Gini sau khi chia và chọn phép chia làm Gini giảm nhiều nhất. Với tập này, câu hỏi gốc là thu_nhap <= 15.05.
